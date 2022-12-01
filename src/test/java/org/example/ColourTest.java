@@ -39,4 +39,11 @@ class ColourTest {
         Colour White = new Colour(1.0,1.0,1.0);
         assertEquals(255,White.g);
     }
+
+    @Test
+        //Test to check if the conversion logic functions for b
+    void BComponentValueConversionCheck() {
+        Colour White = new Colour(1.0, 1.0, 1.0);
+        assertEquals(255, White.b);
+    }
 }
