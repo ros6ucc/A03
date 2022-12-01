@@ -18,4 +18,11 @@ class ColourTest {
         Colour Red = new Colour(1.0,-0.5,0.0);
         assertEquals(0, Red.g);
     }
+
+    @Test
+        // Value of b should be 0 as number is out of range
+    void BComponentOutOfRange() {
+        Colour Red = new Colour(1.0,0.1,-0.2);
+        assertEquals(0, Red.b);
+    }
 }
