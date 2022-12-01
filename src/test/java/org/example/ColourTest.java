@@ -70,12 +70,10 @@ class ColourTest {
         assertFalse(Blue.comparison(Red));
     }
 
-    // Implementation of the RGB Colours in decimal code form -- my representation
-    public String DecimalCode() {
-        String red = Integer.toString(r);
-        String green = Integer.toString(g);
-        String blue = Integer.toString(b);
-        String decimalCode = "("+red+", "+green+", "+blue+")";
-        return decimalCode;
+    @Test
+        //Test to see if visual implementation functions to convert values to a decimal code
+    void ImplementationTest() {
+        Colour Purple = new Colour(0.85,0.62,0.85);
+        assertEquals("(217, 158, 217)",Purple.DecimalCode());
     }
 }
