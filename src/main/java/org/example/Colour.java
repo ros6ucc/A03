@@ -51,4 +51,13 @@ public class Colour {
                 && g == object.g
                 && b == object.b;
     }
+
+    // Implementation of the RGB Colours in decimal code form -- my representation
+    public String DecimalCode() {
+        String red = Integer.toString(r);
+        String green = Integer.toString(g);
+        String blue = Integer.toString(b);
+        String decimalCode = "("+red+", "+green+", "+blue+")";
+        return decimalCode;
+    }
 }
