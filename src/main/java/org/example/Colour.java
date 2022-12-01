@@ -40,4 +40,15 @@ public class Colour {
         return value < min || value > max;
     }
 
+    //method to facilitate the comparison of colours
+    public boolean comparison(Object colour) {
+        if (this == colour)
+            return true;
+        if (colour == null)
+            return false;
+        org.example.Colour object = (org.example.Colour) colour;
+        return r == object.r
+                && g == object.g
+                && b == object.b;
+    }
 }
