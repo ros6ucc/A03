@@ -26,6 +26,15 @@ public class Colour {
             this.b = (int) Math.round(RGBMax * BComponent);
         }
     }
+
+    //Constructor to implement logic that disassembles the RBG value
+    public Colour(int RGBValue) {
+        r = RGBValue % (RGBMax +1);
+        RGBValue = RGBValue / (RGBMax +1);
+        g = RGBValue % (RGBMax +1);
+        RGBValue = RGBValue / (RGBMax +1);
+        b = RGBValue % (RGBMax +1);
+    }
     //Method for the range check logic
     public static boolean RangeCheck(double value, double min, double max) {
         return value < min || value > max;
