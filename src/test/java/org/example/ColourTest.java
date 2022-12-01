@@ -25,4 +25,11 @@ class ColourTest {
         Colour Red = new Colour(1.0,0.1,-0.2);
         assertEquals(0, Red.b);
     }
+
+    @Test
+        //Test to check if the conversion logic functions for r
+    void RComponentValueConversionCheck() {
+        Colour Red = new Colour(1.0,0.0,0.0);
+        assertEquals(255,Red.r);
+    }
 }
