@@ -32,4 +32,11 @@ class ColourTest {
         Colour Red = new Colour(1.0,0.0,0.0);
         assertEquals(255,Red.r);
     }
+
+    @Test
+        //Test to check if the conversion logic functions for g
+    void GComponentValueConversionCheck(){
+        Colour White = new Colour(1.0,1.0,1.0);
+        assertEquals(255,White.g);
+    }
 }
