@@ -46,4 +46,11 @@ class ColourTest {
         Colour White = new Colour(1.0, 1.0, 1.0);
         assertEquals(255, White.b);
     }
+
+    @Test
+        //Test to determine if RGBValue is divided up correctly
+    void RGBValueBreakdownIntoEachPartTest() {
+        Colour Yellow = new Colour(510);
+        assertEquals(255,Yellow.r +1);
+    }
 }
