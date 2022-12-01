@@ -53,4 +53,20 @@ class ColourTest {
         Colour Yellow = new Colour(510);
         assertEquals(255,Yellow.r +1);
     }
+
+    @Test
+        //Test to determine if the comparison method correctly compares two of the same colours
+    void ComparisonTestIfTrue() {
+        Colour Blue1 = new Colour(0.0,0.0,1.0);
+        Colour Blue2 = new Colour(0.0,0.0,1.0);
+        assertTrue(Blue1.comparison(Blue2));
+    }
+
+    @Test
+        //Test to determine if the comparison method correctly compares two different colours
+    void ComparisonTestIfFalse() {
+        Colour Blue = new Colour(0.0,0.0,1.0);
+        Colour Red = new Colour(1.0,0.0,0.0);
+        assertFalse(Blue.comparison(Red));
+    }
 }
